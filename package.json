@@ -1,0 +1,12 @@
+{
+  "name": "spiderman-landingpage",
+  "version": "1.0.0",
+  "description": "Landing Page para campanha publicitária de vendas do novo jogo de Spider-Man para PS5.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jhonatan Oliveira",
+  "license": "ISC"
+}
