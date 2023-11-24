@@ -103,10 +103,8 @@ header button:hover {
 	height: 84rem;
 	padding-top: 11.2rem;
 	padding-bottom: 14.3rem;
-	background-image: url("../img/bg-hero.jpg");
+	background: url("../img/bg-hero.jpg") no-repeat center center;
 	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
 }
 
 .s-hero .container {
@@ -261,4 +259,58 @@ header button:hover {
 	font-size: 1.6rem;
 	font-weight: 500;
 	margin-bottom: 1.6rem;
+}
+
+footer {
+	position: relative;
+	padding-top: 9.6rem;
+	padding-bottom: 7.2rem;
+}
+
+footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 1.6rem;
+	background: url("../img/line.svg") no-repeat center center;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+footer .left {
+	width: 100%;
+	max-width: 66.8rem;
+}
+
+footer .left strong {
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: "Mohave", sans-serif;
+
+	display: block;
+	margin-bottom: 1.1rem;
+}
+
+footer .left p {
+	color: #ceced9;
+	font-size: 1.4rem;
+	line-height: 150%;
+}
+
+footer .right {
+	display: flex;
+	align-items: center;
+	gap: 2.4rem;
+}
+
+footer .right span {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 150%;
 }
