@@ -335,6 +335,7 @@ header button:hover {
 	top: 10.5rem;
 	left: 0;
 	z-index: 5;
+	pointer-events: none;
 	background: linear-gradient(90deg, #060608 -3.29%, rgba(6, 6, 8, 0) 64.25%);
 }
 
@@ -346,6 +347,7 @@ header button:hover {
 	top: 8.9rem;
 	right: 0;
 	z-index: 5;
+	pointer-events: none;
 	background: linear-gradient(270deg, #060608 -3.29%, rgba(6, 6, 8, 0) 64.25%);
 }
 
@@ -410,8 +412,8 @@ header button:hover {
 	background: url("../img/image-hover.svg") no-repeat center center;
 	width: 39.1rem;
 	height: 22.2rem;
-	top: -2px;
-	left: -4px;
+	top: -3px;
+	left: -3px;
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
 }
@@ -636,5 +638,145 @@ footer .right span {
 
 	100% {
 		background-image: url("../img/bg/01.png");
+	}
+}
+
+/* BREAKPOINTS */
+
+@media screen and (max-width: 1200px) {
+	.s-hero {
+		height: auto;
+		padding-top: 7rem;
+		padding-bottom: 7rem;
+	}
+
+	.s-videos {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+
+	.s-videos .btn {
+		display: none;
+	}
+
+	.s-vilao {
+		height: 55rem;
+	}
+
+	footer {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	header nav {
+		display: none;
+	}
+
+	.s-hero .left {
+		max-width: 100%;
+	}
+
+	.s-hero .right {
+		display: none;
+	}
+
+	.s-vilao::before,
+	.s-vilao::after {
+		height: 10rem;
+	}
+
+	footer .container {
+		flex-direction: column;
+		align-items: center;
+		gap: 4rem;
+	}
+
+	footer .left {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	header .logo {
+		max-width: 12.6rem;
+	}
+
+	header button {
+		padding: 0.95rem 2rem;
+	}
+
+	.s-hero {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		background-size: 1120px;
+		background-position: 62% 0;
+	}
+
+	.s-hero .left h1 {
+		font-size: 4.2rem;
+		max-width: 80%;
+		line-height: 120%;
+	}
+
+	.s-hero .left .description {
+		font-size: 1.6rem;
+		margin-bottom: 3rem;
+	}
+
+	.s-hero .left .value {
+		margin-bottom: 4rem;
+	}
+
+	.s-hero .left .value h3 {
+		margin-bottom: 1rem;
+	}
+
+	.s-hero .left ul p {
+		font-size: 1.2rem;
+	}
+
+	.s-hero .left ul:nth-child(2) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.s-hero .left ul li {
+		gap: 1rem;
+	}
+
+	.s-hero .left ul {
+		gap: 1rem;
+	}
+
+	.s-videos {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	.s-vilao {
+		height: auto;
+		padding: 6rem 0;
+		background-size: 900px;
+	}
+
+	.s-vilao h2 {
+		font-size: 3.6rem;
+	}
+
+	.s-vilao p {
+		font-size: 1.6rem;
+		max-width: 30rem;
+		margin-bottom: 4rem;
+	}
+
+	footer {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	footer::before {
+		background-size: 120%;
 	}
 }
