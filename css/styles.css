@@ -76,6 +76,7 @@ header {
 	display: flex;
 	background-color: rgb(0 4 7 / 0.9);
 	backdrop-filter: blur(4rem);
+	z-index: 20;
 }
 
 header .container {
@@ -129,6 +130,7 @@ header button:hover {
 .s-hero .left {
 	width: 100%;
 	max-width: 62.2rem;
+	animation: fadeInUp 500ms linear;
 }
 
 .s-hero .left .platform {
@@ -438,6 +440,10 @@ header button:hover {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	animation: changeBG 10s infinite linear;
 }
 
 .s-vilao h2 {
@@ -508,4 +514,59 @@ footer .right span {
 	font-size: 1.2rem;
 	font-weight: 500;
 	line-height: 150%;
+}
+
+/* KEYFRAMES */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes changeBG {
+	0% {
+		background-image: url("../img/bg/01.png");
+	}
+
+	20% {
+		background-image: url("../img/bg/02.png");
+	}
+
+	35% {
+		background-image: url("../img/bg/03.png");
+	}
+
+	45% {
+		background-image: url("../img/bg/04.png");
+	}
+
+	55% {
+		background-image: url("../img/bg/05.png");
+	}
+
+	65% {
+		background-image: url("../img/bg/06.png");
+	}
+
+	75% {
+		background-image: url("../img/bg/07.png");
+	}
+
+	85% {
+		background-image: url("../img/bg/08.png");
+	}
+
+	95% {
+		background-image: url("../img/bg/09.png");
+	}
+
+	100% {
+		background-image: url("../img/bg/01.png");
+	}
 }
